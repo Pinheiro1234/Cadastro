@@ -1,0 +1,63 @@
+﻿@model ContatoModel
+@{
+    ViewData["Title"] = "Editar cliente";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Cadastrar Cliente</h1>
+
+</div>
+
+
+<form asp-controller="Clientes" asp-action="Alterar" method="post">
+
+    <input type="hidden" asp-for="id" />
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do cliente">
+        
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="text" asp-for="Email" class="form-control" placeholder="Digite o e-mail do cliente">
+        
+    </div>
+
+    <div class="mb-3">
+        <label for="celular" class="form-label">Celular</label>
+        <input type="text" asp-for="Celular" class="form-control" placeholder="Digite o celular do cliente">
+        
+    </div>
+    <div class="mb-3">
+        <label for="cpf" class="form-label">Cpf</label>
+        <input type="text" asp-for="Cpf" class="form-control" placeholder="Digite o celular do cliente">
+    </div>
+    <div class="mb-3">
+        <label for="Rg" class="form-label">Rg</label>
+        <input type="text" asp-for="Rg" class="form-control" placeholder="Digite o celular do cliente">
+    </div>
+    <div class="mb-3">
+        <label for="endereco" class="form-label">Endereco</label>
+        <input type="text" asp-for="Endereco" class="form-control" placeholder="Digite o celular do cliente">
+    </div>
+    <div class="mb-3">
+        <label for="bairro" class="form-label">Bairro</label>
+        <input type="text" asp-for="Bairro" class="form-control" placeholder="Digite o celular do cliente">
+    </div>
+    <div class="mb-3">
+        <label for="N" class="form-label">N</label>
+        <input type="text" asp-for="N" class="form-control" placeholder="Digite o celular do cliente">
+    </div>
+    <div class="mb-3">
+        <label for="complemento" class="form-label">Complemento</label>
+        <input type="text" asp-for="Complemento" class="form-control" placeholder="Digite o celular do cliente">
+    </div>
+    <div class="mb-3">
+        <label for="cidade" class="form-label">Cidade</label>
+        <input type="text" asp-for="Cidade" class="form-control" placeholder="Digite o celular do cliente">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary btn-block">Alterar</button>
+    <a class="btn btn-secondary btn-block" asp-controller="Clientes" asp-action="Index" role="button">Voltar</a>
+</form>
